@@ -171,11 +171,11 @@ namespace mfem {
   }
 
   int OccaFiniteElementSpace::GetGlobalDofs() const {
-    return globalDofs;
+    return globalDofs * vdim;
   }
 
   int OccaFiniteElementSpace::GetLocalDofs() const {
-    return localDofs;
+    return localDofs * vdim;
   }
 
   int OccaFiniteElementSpace::GetVDim() const {
